@@ -1,0 +1,269 @@
+/*Colors Used
+    Text Color: (Dark Gray): #2b2b2b
+    Primary Color (Purple): #680039
+    Secondary Color (Teal): #006666
+*/
+
+:root {
+  --primary-color: #680039;
+  --secondary-color: #006666;
+  --dark-grey: #2b2b2b;
+  --background-color: #f2fffe;
+  --active-link: #3d5d30;
+  --visited-link: #50679c;
+  --primary-font-size: 16px;
+  --secondary-font-size: 18px;
+  --primary-font-weight: 500;
+  --large-font-weight: 700;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: var(--primary-font-weight);
+  font-size: var(--primary-font-size);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: var(--large-font-weight);
+}
+
+h3 {
+  font-size: var(--secondary-font-size);
+  font-weight: var(--large-font-weight);
+}
+
+h4 {
+  font-size: var(--secondary-font-size);
+  font-weight: 550;
+  font-style: italic;
+  color: black;
+}
+
+.instructional-text {
+  font-style: italic;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:visited {
+  color: var(--visited-link);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--active-link);
+}
+
+button,
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.profile__portrait {
+  float: left;
+  width: 40%;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile,
+.bio,
+table {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__image {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list,
+.my-interests-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+  }
+
+  .grid__item {
+    background-color: rgb(196, 172, 196);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .grid__item:last-child {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #7155ed;
+  }
+  50% {
+    fill: #a8e9f1;
+  }
+  100% {
+    fill: #c97dc5;
+  }
+}
+
+.back-tree {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes gondola-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(-2000px, 50px);
+  }
+}
+
+.front-gondola-left {
+  animation: 10s gondola-move infinite alternate linear;
+}
+
+@keyframes gondola-move-reverse {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(2000px, 0);
+  }
+}
+
+.gondola-back {
+  animation: 10s gondola-move-reverse infinite alternate linear;
+}
+
+.about__table {
+  border-collapse: collapse;
+}
+
+.about__table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 5px;
+}
