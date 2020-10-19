@@ -119,6 +119,8 @@ table {
 }
 
 .about__image--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 25%;
   margin: 0 auto;
