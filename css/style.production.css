@@ -118,9 +118,15 @@ table {
   text-align: center;
 }
 
-.about__image {
-  max-width: 100%;
+.about__image--image {
+  display: flex;
+  width: 25%;
   margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.about__image {
   text-align: center;
 }
 
