@@ -2,6 +2,7 @@
     let form = document.querySelector("#contact-form");
     let emailInput = document.querySelector("#contact-email");
     let phoneInput = document.querySelector("#contact-tel");
+    let messageInput = document.querySelector("#contact-message");
 
 function validateEmail() {
     let value = emailInput.value;
@@ -29,12 +30,24 @@ function validateTelephone() {
         return false;
     }
 
-    if(value.length < 11) {
+    if(value.length < 10) {
         showErrorMessage(phoneInput, "Phone number must include US area code");
         return false;
     }
 
     showErrorMessage(phoneInput, null);
+    return true;
+}
+
+function validateMessage() {
+    let value = messageInput.value;
+
+    if(!value) {
+        showErrorMessage(messageInput, "Message is required");
+        return false;
+    }
+
+    showErrorMessage(messageInput, null);
     return true;
 }
 
@@ -55,7 +68,8 @@ function showErrorMessage(input, message) {
 function validateForm() {
     let isValidEmail = validateEmail();
     let isValidPhone = validateTelephone();
-    return isValidEmail && isValidPhone;
+    let isValidMessage = validateMessage();
+    return isValidEmail && isValidPhone && isValidMessage;
 }
 
 form.addEventListener("submit", (e) => {
@@ -67,5 +81,6 @@ form.addEventListener("submit", (e) => {
 
 emailInput.addEventListener("input", validateEmail);
 phoneInput.addEventListener("input", validateTelephone);
+messageInput.addEventListener("input", validateMessage);
 
 })();
