@@ -30,7 +30,7 @@
     }
 
     if (value.length < 10) {
-      showErrorMessage(phoneInput, "Phone number must include US area code");
+      showErrorMessage(phoneInput, "Phone number must be at least 10 digits long");
       return false;
     }
 
