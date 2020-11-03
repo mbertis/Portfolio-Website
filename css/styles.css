@@ -276,3 +276,9 @@ th,
 td {
   padding: 5px;
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+}
