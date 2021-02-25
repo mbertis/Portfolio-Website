@@ -1,84 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Madison Bertis</title>
-    <link rel="icon" href="img/favicomatic-(3)/favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="css/Normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="icon" href="img/favicomatic-(3)/favicon-16x16.png" />
+    <link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   </head>
 
-<body>
-  <header class="page-header">
-     <img src="img/mbertis-logo.png" 
-      alt="Personal logo of Madison Bertis, consisting of my name written below three triangles in various shades of blue." class="page-header__item">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/mbertis-logo.png"
+        alt="Personal logo of Madison Bertis, consisting of my name written below three triangles in various shades of blue."
+        class="page-header__item"
+      />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <h1>Contact Madison</h1>
+    <h1 class="contact-header">Contact Madison</h1>
 
-  <div>
-    Madison Bertis<br>
-    Spokane, Washington<br>
-    Phone: <a href="tel:5098506960">Click here to call me</a><br>
-    Skype: <a href="skype:live:madisonbertis">live.madisonbertis</a><br>
-    <a href="mailto:madisonbertis@gmail.com?subject=Hello%2C%20Madison!">madisonbertis@gmail.com</a><br>
-    <a href="mailto:madisonbertis@gmail.com?subject=Hello%2C%20Madison!">Contact Me</a>
-  </div>
+    <div class="contact-body">
+      Madison Bertis<br />
+      Spokane, Washington<br />
+      Phone: <a href="tel:5098506960">Click here to call me</a><br />
+      Skype: <a href="skype:live:madisonbertis">live.madisonbertis</a><br />
+      <a href="mailto:madisonbertis@gmail.com?subject=Hello%2C%20Madison!"
+        >madisonbertis@gmail.com</a
+      ><br />
+      <a href="mailto:madisonbertis@gmail.com?subject=Hello%2C%20Madison!"
+        >Contact Me</a
+      >
+    </div>
 
-  <form action="#" method="post" id="contact-form">
-    <label class="standard-label" for="contact-email">Email: </label>
-    <input type="email" id="contact-email" required>
+    <div class="form-container">
+      <h2>Send Me a Message</h2>
+      <form action="#" method="post" id="contact-form">
+        <div class="row">
+          <label class="standard-label" for="contact-email">Email: </label>
+          <div class="col-75">
+            <input type="email" id="contact-email" required />
+          </div>
+        </div>
 
-    <label class="standard-label" for="contact-tel">Telephone: </label>
-    <input type="tel" id="contact-tel">
+        <div class="row">
+          <label class="standard-label" for="contact-tel">Telephone: </label>
+          <div class="col-75">
+            <input type="tel" id="contact-tel" />
+          </div>
+        </div>
 
-    <label class="standard-label" for="contact-message">Message: </label>
-    <textarea maxlength="240" required id="contact-message"></textarea>
+        <div class="row">
+          <label class="standard-label" for="contact-message">Message: </label>
+          <div class="col-75">
+            <textarea maxlength="240" required id="contact-message"></textarea>
+          </div>
+        </div>
 
-    <input type="submit" value="Send Message">
+        <div class="row">
+          <div class="col-75">
+            <input type="submit" value="Send Message" />
+          </div>
+        </div>
 
-    <!-- <p class="instructional-text">
+        <!-- <p class="instructional-text">
       Fields marked with * are required.
     </p> -->
-  </form>
-
-  <footer class="page-footer">
-    <h4>Find me on</h4>
-      <div class="social-media">
-      <a href="https://www.facebook.com/" target="_blank">
-        <img src="img/Facebook-Black.svg" alt="Facebook Icon" width="34" height="34">
-      </a>
-      <a href="https://www.linkedin.com/in/madison-bertis-359468133" target="_blank">
-        <img src="img/LinkedIn-Black.svg" alt="LinkedIn Icon" width="30" height="30">
-      </a>
-      <a href="https://github.com/" target="_blank">
-        <img src="img/Github-Black.svg" alt="Github Icon" width="30" height="30">
-      </a>
+      </form>
     </div>
-  </footer>
 
-  <script src="js/tota11y.min.js"></script>
-  <script src="js/scripts.js"></script>
+    <footer class="page-footer">
+      <h4>Find me on</h4>
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img
+            src="img/Facebook-Black.svg"
+            alt="Facebook Icon"
+            width="34"
+            height="34"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/madison-bertis-359468133"
+          target="_blank"
+        >
+          <img
+            src="img/LinkedIn-Black.svg"
+            alt="LinkedIn Icon"
+            width="30"
+            height="30"
+          />
+        </a>
+        <a href="https://github.com/" target="_blank">
+          <img
+            src="img/Github-Black.svg"
+            alt="Github Icon"
+            width="30"
+            height="30"
+          />
+        </a>
+      </div>
+    </footer>
 
-</body>
-
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
