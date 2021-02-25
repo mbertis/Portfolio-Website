@@ -42,7 +42,7 @@ textarea {
 .form-container {
   border-radius: 5px;
   padding: 20px;
-  margin-left: 500px;
+  margin-left: 30%;
   margin-top: 50px;
 }
 
@@ -52,10 +52,14 @@ textarea {
   clear: both;
 }
 
-/* .standard-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-} */
+@media screen and (max-width: 600px) {
+  .col-75,
+  .standard-label,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
 .standard-label {
   float: left;
