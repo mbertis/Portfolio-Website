@@ -163,10 +163,18 @@ button:focus,
 }
 
 .profile__portrait {
+  float: right;
+  width: 45%;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-radius: 20%;
+}
+
+.profile-welcome {
   float: left;
-  width: 40%;
+  margin-top: 50px;
   margin-right: 40px;
-  border-radius: 50%;
+  width: 45%;
 }
 
 .profile,
