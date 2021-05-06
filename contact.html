@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Madison Bertis</title>
     <link rel="icon" href="img/favicomatic-(3)/favicon-16x16.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/Normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
@@ -14,40 +20,40 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <img
-        src="img/mbertis-logo.png"
-        alt="Personal logo of Madison Bertis, consisting of my name written below three triangles in various shades of blue."
-        class="page-header__item"
-      />
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About Me</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Projects</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="img/mbertis-logo.png"
+            alt="personal logo of Madison Bertis"
+            width="140"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/index.html">Home</a>
+            <a class="nav-link" href="/about.html">About Me</a>
+            <a class="nav-link" href="/work.html">Projects</a>
+            <a class="nav-link active" aria-current="page" href="/contact.html"
               >Contact</a
             >
-          </li>
-        </ul>
-      </nav>
-    </header>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <h1 class="contact-header">Contact Madison</h1>
 
