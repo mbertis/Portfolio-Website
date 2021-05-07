@@ -127,8 +127,8 @@ table {
 
 .page-footer {
   clear: both;
-  display: flex;
-  flex-direction: column;
+  display: fixed;
+  flex-direction: row;
   text-align: center;
 }
 
