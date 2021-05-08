@@ -51,21 +51,34 @@
             <a class="nav-link" href="/index.html" style="color: #15585e"
               >Home</a
             >
-            <a class="nav-link" href="/about.html" style="color: #15585e">About Me</a>
-            <a class="nav-link active" aria-current="page" href="/work.html" style="color: #5e1b15; font-weight: bold;">Projects</a>
-            <a class="nav-link" href="/contact.html" style="color: #15585e">Contact</a>
+            <a class="nav-link" href="/about.html" style="color: #15585e"
+              >About Me</a
+            >
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/work.html"
+              style="color: #5e1b15; font-weight: bold"
+              >Projects</a
+            >
+            <a class="nav-link" href="/contact.html" style="color: #15585e"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
     </nav>
 
-    <section>
-      <h1>My Projects</h1>
-      <div class="grid">
-        <div class="grid__item">
+    <h1>My Projects</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
           <h2>Pokedex App</h2>
           <p>
-            This is a small web application that I built using HTML, CSS, and JavaScript. It loads data from an external API and allows users to learn about individual Pokemon in detail. Users may also search for a specific Pokemon using the search bar.
+            This is a small web application that I built using HTML, CSS, and
+            JavaScript. It loads data from an external API and allows users to
+            learn about individual Pokemon in detail. Users may also search for
+            a specific Pokemon using the search bar.
           </p>
           <a href="https://mbertis.github.io/pokedex-app/" target="_blank"
             >Try the app!</a
@@ -74,34 +87,74 @@
             >See code on Github</a
           >
           <a href="img/pokedex_app.jpeg" target="_blank">
-          <img src="img/pokedex_app.jpeg" alt="Screenshot of my Pokedex App" style="height: 40%; width: 60%"></a>
+            <img
+              src="img/pokedex_app.jpeg"
+              alt="Screenshot of Pokedex App"
+              width="100"
+              style="border: 2px solid #000000" /></a
+          ><br />
         </div>
-        </div>
-        <div class="grid__item">
+        <div class="col">
           <h2>myFlix App</h2>
           <p>
-            I built the server-side component of a "movies" web application which will allow users to access information about different movies, directors, and genres. Users can also create and update their account and create a list of their favorite movies. My API is a Node.js and Express application and uses a REST architecture with URL endpoints detailed in my documentation. The movies database was built using MongoDB and information is provided in JSON format. My API has been tested in Postman and deployed to Heroku.
+            I built the server-side component of a "movies" web application
+            which will allow users to access information about different movies,
+            directors, and genres. Users can also create and update their
+            account and create a list of their favorite movies. My API is a
+            Node.js and Express application and uses a REST architecture with
+            URL endpoints detailed in my documentation. The movies database was
+            built using MongoDB and information is provided in JSON format. My
+            API has been tested in Postman and deployed to Heroku.
           </p>
           <a href="https://github.com/mbertis/myFlix" target="_blank"
             >See code on Github for the server-side of my application</a
           ><br />
-          <a href="https://github.com/mbertis/myFlix-client" target="_blank">See code on Github for the client-side of my application built using React</a><br />
-          <a href="https://github.com/mbertis/myFlix-Angular-client" target="_blank">See code on Github for the client-side of my application built using Angular</a><br />
-          <a href="https://myfavflix.netlify.app/" target="_blank">Try out the React App!</a><br />
-          <a href="https://mbertis.github.io/myFlix-Angular-client/welcome">Try out the Angular App!</a><br />
-          <img src="img/myFlix_Angular.jpeg" alt="Screenshot of the myFlix client-side app built using Angular" style="height: 40%; width: 60%">
+          <a href="https://github.com/mbertis/myFlix-client" target="_blank"
+            >See code on Github for the client-side of my application built
+            using React</a
+          ><br />
+          <a
+            href="https://github.com/mbertis/myFlix-Angular-client"
+            target="_blank"
+            >See code on Github for the client-side of my application built
+            using Angular</a
+          ><br />
+          <a href="https://myfavflix.netlify.app/" target="_blank"
+            >Try out the React App!</a
+          ><br />
+          <a href="https://mbertis.github.io/myFlix-Angular-client/welcome"
+            >Try out the Angular App!</a
+          ><br />
+          <a href="img/myFlix_Angular.jpeg" target="_blank">
+            <img
+              src="img/myFlix_Angular.jpeg"
+              alt="Screenshot of myFlix app built using Angular"
+              width="100"
+              style="border: 2px solid #000000" /></a
+          ><br />
         </div>
-        <div class="grid__item">
+      </div>
+
+      <div class="row">
+        <div class="col">
           <h2>Chat App</h2>
           <p>
-            This is a chat app for mobile devices built using React Native. The app provides users with a chat interface and options to share images and their location.
+            This is a chat app for mobile devices built using React Native. The
+            app provides users with a chat interface and options to share images
+            and their location.
           </p>
           <a href="https://github.com/mbertis/chat" target="_blank"
             >See code on Github</a
           >
-          <img src="img/Chat_App.gif" alt="Screen recording of Chat App in use" style="height: 20%; width: 30%">
+          <a href="img/meet_app_screenshot.png" target="_blank">
+            <img
+              src="img/Chat_App.gif"
+              alt="Screen recording of Chat App in use"
+              height="300"
+              style="border: 2px solid #000000" /></a
+          ><br />
         </div>
-        <div class="grid__item">
+        <div class="col">
           <h2>Meet App</h2>
           <p>
             The goal of this project was to build a serverless, progressive web
@@ -118,17 +171,21 @@
             >
           </p>
           <a href="img/meet_app_screenshot.png" target="_blank">
-          <img
-            src="img/meet_app_screenshot.png"
-            alt="Screenshot of Meet App"
-            width="75%"
-            style="border: 2px solid #000000;"
-          /></a><br />
-          <a href="https://mbertis.github.io/meet/" target="_blank">Try out the App!</a><br />
-          <a href="https://github.com/mbertis/meet" target="_blank">See code on Github</a>
+            <img
+              src="img/meet_app_screenshot.png"
+              alt="Screenshot of Meet App"
+              width="100"
+              style="border: 2px solid #000000" /></a
+          ><br />
+          <a href="https://mbertis.github.io/meet/" target="_blank"
+            >Try out the App!</a
+          ><br />
+          <a href="https://github.com/mbertis/meet" target="_blank"
+            >See code on Github</a
+          >
         </div>
-        </div>
-    </section>
+      </div>
+    </div>
 
     <footer class="page-footer">
       <h4>Find me on</h4>
