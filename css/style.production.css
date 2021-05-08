@@ -209,9 +209,22 @@ table {
   text-align: center;
 }
 
+.contact__image {
+   text-align: center;
+   margin-top: 40px;
+}
+
 .about__image {
   text-align: center;
 }
+
+/* .navbar-toggler {
+  background-color: #15585e;
+}
+
+.navbar-toggler-icon {
+  background-color: gray;
+} */
 
 table {
   margin-top: 50px;
