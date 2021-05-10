@@ -202,6 +202,31 @@ table {
   text-align: center;
 }
 
+body, html {
+  height: 100%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Lemons.jpg");
+  height: 70%;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 40px;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  top: 55%;
+  left: 5%;
+  position: absolute;
+}
+
 .about__image--image {
   width: 30%;
   margin: 0 auto;
