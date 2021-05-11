@@ -208,7 +208,7 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Lemons.jpg");
-  height: 70%;
+  height: 80%;
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +217,7 @@ body, html {
 
 .hero-image-about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mountain.jpg");
-  height: 70%;
+  height: 80%;
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,7 +226,7 @@ body, html {
 
 .hero-image-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/laptop.jpg");
-  height: 70%;
+  height: 80%;
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,16 +248,17 @@ body, html {
 .hero-text-about {
   text-align: center;
   color: white;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
   position: absolute;
 }
 
 .hero-text-contact {
   text-align: center;
   background-color: white;
-  left: 35%;
-  margin-top: 15%;
+  left: 25%;
+  right: 25%;
+  top: 25%;
   position: absolute;
   padding-top: 10px;
   padding-right: 40px;
@@ -283,6 +284,21 @@ body, html {
   text-align: center;
 }
 
+.icon {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+
+.icon-sm {
+  height: 48px;
+  width: 48px;
+}
+
+.icon-container {
+  margin-top: 5px;
+}
+
 /* .navbar-toggler {
   background-color: #15585e;
 }
@@ -303,6 +319,11 @@ table {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
 }
 
 * {
