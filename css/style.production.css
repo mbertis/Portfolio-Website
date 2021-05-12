@@ -238,12 +238,14 @@ table {
   text-align: center;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Lemons.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/Lemons.jpg");
   height: 80%;
   width: 80%;
   margin-left: 10%;
@@ -254,7 +256,8 @@ body, html {
 }
 
 .hero-image-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mountain.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/mountain.jpg");
   height: 80%;
   width: 80%;
   margin-left: 10%;
@@ -265,7 +268,8 @@ body, html {
 }
 
 .hero-image-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/laptop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/laptop.jpg");
   height: 80%;
   width: 80%;
   margin-left: 10%;
@@ -318,8 +322,8 @@ body, html {
 }
 
 .contact__image {
-   text-align: center;
-   margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .about__image {
@@ -393,7 +397,6 @@ table {
   flex-grow: 1;
   text-align: right;
 }
-
 
 .my-skills-list {
   list-style-type: none;
