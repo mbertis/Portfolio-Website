@@ -194,6 +194,42 @@ button:focus,
   width: 45%;
 }
 
+.profile-text {
+  position: aboslute;
+  text-align: center;
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 15%;
+}
+
+.profile-container {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 15%;
+  height: 65%;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.profile-image {
+  position: relative;
+  height: 50%;
+  border-radius: 200px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@media all and (min-width: 300px) and (max-width: 700px) {
+  .profile-image {
+    height: 40%;
+  }
+  .profile-container {
+    height: 30%;
+  }
+}
+
 .profile,
 .bio,
 table {
@@ -358,9 +394,15 @@ table {
   text-align: right;
 }
 
-.navigation-list,
-.my-interests-list {
+
+.my-skills-list {
   list-style-type: none;
+  text-align: center;
+  list-style: inside;
+}
+
+.about-title {
+  font-size: 25px;
 }
 
 .navigation-list li {
