@@ -194,12 +194,18 @@ button:focus,
   width: 45%;
 }
 
+.profile-wrapper {
+  display: flex;
+  width: 80%;
+  margin-top: 5%;
+}
+
 .profile-text {
   position: aboslute;
   text-align: center;
   width: 40%;
-  margin-left: 5%;
-  margin-top: 15%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 .profile-container {
@@ -207,7 +213,6 @@ button:focus,
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 15%;
   height: 65%;
   width: 40%;
   border-radius: 20px;
@@ -226,8 +231,25 @@ button:focus,
     height: 40%;
   }
   .profile-container {
-    height: 30%;
+    height: 50%;
+    width: 80%;
+    left: 10%;
   }
+  .profile-wrapper {
+    display: inline;
+  }
+  .profile-text {
+    width: 80%;
+  }
+  
+  /* .hero-image-about {
+   display: grid;
+   height: 50%;
+  }
+  .hero-text-about {
+    margin-top: 200%;
+    color: var(--secondary-color) !important;
+  } */
 }
 
 .profile,
