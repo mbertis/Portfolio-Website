@@ -241,15 +241,6 @@ button:focus,
   .profile-text {
     width: 80%;
   }
-  
-  /* .hero-image-about {
-   display: grid;
-   height: 50%;
-  }
-  .hero-text-about {
-    margin-top: 200%;
-    color: var(--secondary-color) !important;
-  } */
 }
 
 .profile,
